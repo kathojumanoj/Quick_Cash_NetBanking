@@ -14,6 +14,15 @@ Welcome to the Quick Cash repository! Quick Cash provides a simple and secure wa
 
 **About Us**: Learn more about Quick Cash and our services.
 
+# Technologies Used
+JSP (JavaServer Pages): Server-side technology for building dynamic web pages with Java.
+
+Oracle Database: Relational database management system used to store and manage application data.
+
+HTML/CSS/JavaScript: Front-end technologies for creating user interfaces and interactive features.
+
+Servlets: Java classes used to handle requests and responses between the web server and Oracle database.
+
 # Usage
 **Operations**: Choose from various operations like money transfer, statement, balance enquiry, profile, help & support, and about us directly from the user interface.
 
