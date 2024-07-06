@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="loll.css">
+</head>
+<style>
+    body{
+      background-color: black;
+    }
+</style>
+<body onload="display_ct()">
+  <div id="hdiv">
+    <div id="time">
+        <h2 id="ct"></h2><br>
+        <h4>Make EveryThing Easy!</h4>
+    </div>
+     
+     <div class="logo">
+    <h2><img id="im" src="logo.png"></h2>
+    <p id="slog" align="center">   Best Net Banking Services </p>
+    </div>
+</div>
+<a href="index.html">Home</a>
+ 
+
+
+  <div class="form-body">
+    <div class="button-bd">
+      <div id="btn"></div>
+      <button type="button" class="toggle" onclick="login()">Login</button>
+      <button type="button" class="toggle" onclick="reg()">Admin</button>
+    </div>
+    
+    <form id="login" class="formcss" action="loginvalid.jsp" name="myform" onsubmit="return valid()">
+      <input class="inputcss" type="text" name="uname" placeholder="username" > 
+      <input class="inputcss" type="password" name="pass" placeholder="password" >
+       
+     <input class="sub" type="submit" name="check" value="Login"> 
+    </form>
+    <form id="reges" class="formcss" action="loginAdminvalid.jsp">
+      <input class="inputcss" type="text" name="uname" placeholder="username" required>
+      <input class="inputcss" type="password" name="pass" placeholder="password" required> 
+      <input class="sub" type="submit" name="check" value="Login Admin"> 
+    </form>
+  </div>
+
+  
+
+</body>
+<script type="text/javascript"> 
+  function display_c(){
+          mytime=setTimeout('display_ct()',1000)
+  }
+
+  function display_ct() {
+          var x = new Date();
+          var xx=x.toLocaleTimeString();
+          var yy=x.toLocaleDateString();
+          document.getElementById('ct').innerHTML = yy+" "+xx+" ";
+          display_c();
+  }
+  var x=document.getElementById('login');
+	var y=document.getElementById('reges');
+	var z=document.getElementById('btn');
+	function reg() {
+		// body...
+		x.style.left="-400px";
+		y.style.left="50px";
+		z.style.left="100px";
+	}
+	function login() {
+		// body...
+		x.style.left="50px";
+		y.style.left="450px";
+		z.style.left="0px";
+	}
+	function  valid() {
+		// body...
+		let p=document.myform.uname.value;
+		if(p=="")
+		{
+			alert("Name not empty");
+      return false;
+		}
+	}
+//   function validateForm() {
+
+//   let x = document.forms["myForm"]["uname"].value;
+//   if (x == "") {
+//     alert("Name must be filled out");
+//     return false;
+//   }
+// }
+  
+</script>
+</html>

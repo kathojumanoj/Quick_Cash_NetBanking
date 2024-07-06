@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=13530&format=png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>QuickCash$</title>
+    <style>
+        *{
+            top:0;
+            margin:0;
+        }
+        body{
+            /* background-image: url(https://cdn.wallpapersafari.com/25/62/w8sEeg.jpg); */
+            background-color: rgba(7, 0, 3, 0.808);
+            background-size: 100%;
+            background-position: fixed;
+        }
+        #hdiv{
+            background-color: rgba(249, 247, 247, 0.929);
+        }
+        #im{
+            border-radius: 10px;
+            width: 100px;
+            height: 90px;
+            padding-top: 10px;
+            
+            
+        }
+        /* #ct{
+            float: right;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        } */
+        .indiv{
+            
+            color:bisque;
+            padding: 10vh;
+            margin:auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #time{
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            float: right;
+        }
+        .wel{
+            padding-left: 120px;
+            padding-top: 2vh;
+            color:aqua;
+        }
+        .inner{
+           display: flex;
+        }
+        
+        .logo{
+            padding-left: 30px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        #slog{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        #refs{
+            padding-left: 20vh;
+            padding-top: 5vh;
+            /* border: 2px solid rgb(226, 218, 196); */
+            color:rgb(255, 116, 116);
+            font-size: 20px;
+            
+        }
+        a{
+            border: 1px solid rgb(248, 252, 246);
+            border-radius: 15px;
+            padding: 13px;
+            color: rgb(127, 238, 255);
+            text-decoration: none;
+            margin-right: 10vh;
+        }
+        a:hover{
+            background-color: rgb(255, 74, 158);
+        }
+    </style>
+</head>
+<body onload="display_ct()"> 
+    <div id="hdiv">
+        <div id="time">
+            <h2 id="ct"></h2><br>
+            <h3>Make EveryThing Easy!</h3>
+        </div>
+        <!-- <h1><img src="https://img.icons8.com/?size=512&id=13530&format=png" width="90px">Quick Cash </h1> -->
+         <div class="logo">
+        <h2><img id="im" src="logo.png"></h2>
+        <p id="slog" align="center"> Net Banking Services </p>
+        </div>
+    </div>
+    <div class="indiv">
+        <h1>Hello Good <span id="spp"></span></h1>
+        <div class="wel">
+            <h1> Welcome to Our Services !</h1>
+             <div id="refs">
+                <p>If you haven't Created Account ,</p><br>
+                <a href="CreateAcc.html"> Create </a><br><br>
+                <p>OtherWise ,</p><br>
+                <a href="login.html">Login <i class='fas fa-sign-in-alt'></i></a><br>
+             </div>
+        </div>
+
+        <div class="wel">
+            <h1> <br>For Admins</h1>
+             <div id="refs">
+                <p>Create Admin Account,</p><br>
+                <a href="CreateAccAdmin.html"> Create Admin </a><br><br>
+                <p>Login ,</p><br>
+                <a href="login.html"> Login</a><br>
+             </div>
+        </div>
+    </div>
+    
+</body>
+	<script type="text/javascript"> 
+        function display_c(){
+                mytime=setTimeout('display_ct()',1000)
+        }
+
+        function display_ct() {
+                var x = new Date();
+                var xx=x.toLocaleTimeString();
+                var yy=x.toLocaleDateString();
+
+                if(24>=x.getHours() && x.getHours()>=18)
+                {
+                    document.getElementById('spp').innerHTML = "Evening ";
+                }
+                else if(12>=x.getHours() && x.getHours()>=0)
+                {
+                    document.getElementById('spp').innerHTML = "Morning ";
+                }
+                else{
+                    document.getElementById('spp').innerHTML = "Afternoon ";
+                }
+                document.getElementById('ct').innerHTML = yy+" "+xx+" ";
+                display_c();
+        }
+</script>
+</html>

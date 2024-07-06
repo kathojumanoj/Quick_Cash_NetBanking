@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateAccountAdmin</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=13530&format=png">
+</head>
+<style>
+     *{
+            top:0;
+            margin:0;
+     }
+     body{
+        background-color: rgb(149, 249, 254);
+     }
+    
+    td{
+        padding: 20px;
+    }
+    input{
+        padding: 5px;
+        font-size: medium;
+        /* border-top: none;
+        border-right: none;
+        border-left: none; */
+    }
+    #hdiv{
+            background-color: rgba(253, 252, 252, 0.929);
+        }
+        #im{
+            border-radius: 80px;
+            width: 100px;
+            height: 90px;
+            padding-top: 30px;
+            
+            
+        }
+        /* #ct{
+            float: right;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        } */
+        .indiv{
+            
+            color:bisque;
+            padding: 10vh;
+            margin:auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #time{
+            padding: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            float: right;
+        }
+        .wel{
+            padding-left: 120px;
+            padding-top: 2vh;
+            color:aqua;
+        }
+        .inner{
+           display: flex;
+        }
+        
+        .logo{
+            padding-left: 60px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        #slog{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        #refs{
+            padding-left: 20vh;
+            padding-top: 5vh;
+            /* border: 2px solid rgb(226, 218, 196); */
+            color:rgb(255, 116, 116);
+            font-size: 20px;
+            
+        }
+        a{
+            border: 1px solid rgb(248, 252, 246);
+            background-color: black;
+            border-radius: 15px;
+            padding: 13px;
+            float: right;
+            color: rgb(127, 238, 255);
+            text-decoration: none;
+            margin-right: 10vh;
+        }
+        a:hover{
+            background-color: rgb(255, 74, 158);
+        }
+        .formdiv{
+            padding: 12vh;
+            margin-left: 16vh;
+        }
+        input[type="submit"],input[type="reset"]{
+            
+            padding: 10px;
+            border: 1px solid pink;
+        }
+        input[type="submit"]:hover,input[type="reset"]:hover{
+            background-color: rgb(239, 86, 86);
+        }
+        h1{
+            color: rgb(7, 14, 0);
+        }
+</style>
+<body onload="display_ct()">
+    <div id="hdiv">
+        <div id="time">
+            <h2 id="ct"></h2><br>
+            <h4>Make EveryThing Easy!</h4>
+        </div>
+        <!-- <h1><img src="https://img.icons8.com/?size=512&id=13530&format=png" width="90px">Quick Cash </h1> -->
+         <div class="logo">
+        <h2><img id="im" src="logo.png"></h2>
+        <p id="slog" align="center">  Best Net Banking Services </p>
+        </div>
+    </div>
+    <a href="index.html">Home</a>
+    <div class="formdiv">
+        <h1 align="center" >  Create Admin Account </h1><br>
+    <table align="center">
+    <form action="creatAdacc.jsp" method="post" >
+        <tr>
+            <td><h3>Name</h3></td>
+            <td><input type="text" name="accname" required></td>
+
+            <td><h3>Phone Number </h3></td>
+            <td><input type="text" name="pno" required></td>
+        </tr>
+        <tr>
+            <td><h3>UserName :</h3></td>
+            <td><input type="text" name="uname" placeholder="no spaces"required></td>
+            
+            <td><h3>Password :</h3></td>
+            <td><input type="password" name="pass" required></td>
+        </tr>
+        <tr>
+            <td><h3>Address :</h3></td>
+            <td><input type="text" name="address" required></td>
+            
+            <td><h3>Gender :</h3></td>
+            <td><input type="radio" name="gen" required> Male &nbsp;<input type="radio" name="gen" required> Female</td>
+        </tr>
+        <tr>
+            <td><h3>Admin Key :</h3></td>
+            <td><input type="text" name="adminkey" placeholder="X#HMDs" required></td>
+            <td><h3>Email :</h3></td>
+            <td><input type="email" name="email" placeholder="@" required></td>
+            
+            <!-- <td><h3>Gender :</h3></td>
+            <td><input type="radio" name="gen" required> Male &nbsp;<input type="radio" name="gen" required> Female</td> -->
+        </tr>
+        <tr>
+            <td><h3>Reset the Data :</h3></td>
+            <td><input type="reset" value="Reset"></td>
+            
+            <td><h3>Confirm </h3></td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </form>
+    </table>
+</div>
+</body>
+<script type="text/javascript"> 
+    function display_c(){
+            mytime=setTimeout('display_ct()',1000)
+    }
+
+    function display_ct() {
+            var x = new Date();
+            var xx=x.toLocaleTimeString();
+            var yy=x.toLocaleDateString();
+
+            
+            document.getElementById('ct').innerHTML = yy+" "+xx+" ";
+            display_c();
+    }
+</script>
+</html>

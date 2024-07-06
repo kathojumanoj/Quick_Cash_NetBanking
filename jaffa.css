@@ -1,0 +1,203 @@
+/* starts */
+/* *{
+	top:0;
+	margin:0;
+} */
+.container{
+	/* margin-left: 33vw; */
+	width: fit-content;
+	}
+	
+body{
+background-color: rgb(2, 246, 161);
+}
+
+td{
+padding: 20px;
+}
+#hdiv{
+	background-color: rgba(255, 255, 255, 0.929);
+	 
+}
+#im{
+	border-radius: 20px;
+	width: 100px;
+	height: 100px;
+	padding-top: 30px;
+	
+	
+}
+.indiv{
+	
+	color:bisque;
+	padding: 10vh;
+	margin:auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#time{
+	padding: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	float: right;
+}
+.wel{
+	padding-left: 120px;
+	padding-top: 2vh;
+	color:aqua;
+}
+.inner{
+	display: flex;
+}
+
+.logo{
+	padding-left: 60px;
+	font-size: 28px;
+	font-weight: bold;
+}
+#slog{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+#refs{
+	padding-left: 20vh;
+	padding-top: 5vh;
+	/* border: 2px solid rgb(226, 218, 196); */
+	color:rgb(255, 116, 116);
+	font-size: 20px;
+	
+}
+ /* a{
+	border: 1px solid rgb(248, 252, 246);
+	background-color: black;
+	border-radius: 10px;
+	padding: 13px;
+	float: right;
+	color: rgb(45, 227, 255);
+	text-decoration: none;
+	margin-right: 10vh;
+} 
+a:hover{
+	background-color: rgb(255, 74, 158);
+} */
+/* .sp{
+	font-weight: bold;
+	color:rgb(238, 21, 21);
+	background-color: rgb(206, 123, 123);
+} */
+.lol{
+	background-color: aqua;
+	width: fit-content;
+
+}
+
+*{ 
+	margin: 0;
+	padding: 0;
+	/* font-family: cursive; */
+}
+/* .backbody{
+	background-image:url(https://www.thehelmandcambridge.com/files/images/menu/menu-bg-one.jpg) ;
+	background-size: cover;	
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	color: white;
+} */
+.form-body{
+	height: 370px;
+	width: 350px;
+	background-color:  white;
+	position: relative;
+	margin: 50px auto;
+	padding: 5px;
+	overflow: hidden;
+	border-radius: 10px;
+	padding: 20px;
+	 
+}
+.button-bd{
+	position: relative;
+	width: 210px;
+	margin: 35px auto;
+	border-radius: 30px;
+	box-shadow: 0 0 20px 1px gray;
+	background-color:lightblue;
+}
+.toggle{
+	padding: 10px 30px;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	position: relative;
+	background: transparent;
+	font-weight: bold;
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	/* background: linear-gradient(to left,#ff105f,#ffad06); */
+	background-color: rgb(255, 1, 52);
+	transition: .5s;
+	border-radius: 30px;
+}
+/* .icons{
+	margin: 30px auto;
+	text-align: center;
+}
+.icons img{
+	width: 30px;
+	margin: 0 12px;
+	box-shadow: 0 0 20px 0 #7f7f7f3d;
+	cursor: pointer;
+	 
+	 
+} */
+.formcss{
+	top: 130px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+	/* padding: 10px; */
+	
+}
+.inputcss{
+	width: 100%;
+	padding: 10px 10px;
+	margin: 12px 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+	overflow: hidden;
+	font-weight: bold;
+}
+ 
+.sub{
+	width: 55%;
+	padding: 10px 30px;
+	background: linear-gradient(to right,#ff78a5,#eda20d);
+	cursor: pointer;
+	margin: 26px 75px;
+	/* margin: auto; */
+	display: block;
+	outline: none;
+	border: 0;
+	border-radius: 30px;
+	font-weight: bold;
+}
+/* span{
+	color: #777;
+	font-size: 13px;
+	bottom: 68px;
+	position: absolute;
+} */
+#login{
+	left: 50px;
+}
+#reges{
+	left: 450px;
+}
+ 
